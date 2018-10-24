@@ -9,6 +9,10 @@ describe("client", () => {
         expect(yieldloveClient.key).toEqual(process.env.KEY);
     });
 
+    test("should throw error if provided without key", () => {
+        expect(() => new client({})).toThrowError("You have to provide api key.");
+    });
+
     test("invalid start date should return error", async () => {
         const yieldloveClient = new client({key: process.env.KEY});
 
