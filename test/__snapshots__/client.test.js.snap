@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`client should return empty data 1`] = `Object {}`;
+
+exports[`client should return filled data 1`] = `
+Object {
+  "wemgehoert.de": Row {
+    "CPM (Euro)": "1,20",
+    "CTR (%)": "0,00",
+    "Clicks": "296",
+    "Date": "2018-10-01 - 2018-10-01",
+    "Impressions": "96744",
+    "Placement": "SUM",
+    "Revenue (Euro)": "116,51",
+  },
+}
+`;
