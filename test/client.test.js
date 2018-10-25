@@ -16,7 +16,7 @@ describe("client", () => {
     test("invalid start date should return error", async () => {
         const yieldloveClient = new client({key: process.env.KEY});
 
-        await yieldloveClient.getData("invalid", "2018-10-01")
+        await yieldloveClient.getData("invalid", "2018-10-24")
             .catch(e => {
                 console.log(e);
                 expect(e).toMatchObject(Error("Start date is invalid."))
@@ -36,7 +36,7 @@ describe("client", () => {
     test("should return filled data", async () => {
         const yieldloveClient = new client({key: process.env.KEY});
 
-        const res = await yieldloveClient.getData("2018-10-01", "2018-10-01");
+        const res = await yieldloveClient.getData("2018-10-24", "2018-10-24");
 
         expect(res).toMatchSnapshot();
     });
