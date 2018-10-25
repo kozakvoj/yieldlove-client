@@ -1,6 +1,6 @@
 {
   "name": "yieldlove-client",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Unofficial Yieldlove client",
   "main": "index.js",
   "test": "jest",
