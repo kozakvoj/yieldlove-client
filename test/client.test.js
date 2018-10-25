@@ -18,7 +18,6 @@ describe("client", () => {
 
         await yieldloveClient.getData("invalid", "2018-10-24")
             .catch(e => {
-                console.log(e);
                 expect(e).toMatchObject(Error("Start date is invalid."))
             })
     });
@@ -28,7 +27,6 @@ describe("client", () => {
 
         await yieldloveClient.getData("2018-10-01", "invalid")
             .catch(e => {
-                console.log(e);
                 expect(e).toMatchObject(Error("End date is invalid."))
             })
     });
